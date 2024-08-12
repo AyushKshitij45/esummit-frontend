@@ -82,7 +82,7 @@ export default function Events() {
           ticker symbol game, quizzes etc. \
         This is an individual event, not teams are required. There is only one round, but there are multiple small games.",
       image: "/images/Bazaar-Bulls.png",
-      // link: "/bazaar-bulls",
+      link: "/bazaarbulls",
     },
     {
       title: "SPEAKER SESSIONS",
@@ -91,6 +91,7 @@ export default function Events() {
          uncover exclusive insights, and connect with visionary leaders. Elevate your entrepreneurial \
          journey with game-changing strategies and unparalleled networking opportunities!",
       image: "/images/speaker-session.png",
+      link: "/speaker",
     },
     {
       title: "INNOVATE-X!",
@@ -101,6 +102,7 @@ export default function Events() {
           (2-4 per company), explore innovative ideas, and be part of the event where connection, collaboration,\
            and conquest are the keys to success. Don't miss out on the excitement!",
       image: "/images/expo.png",
+      link: "/expo",
     },
     {
       title: "CASE-BATTLE",
@@ -112,6 +114,7 @@ export default function Events() {
         for a chance to win. \
         Join us and prove your product management prowess!",
       image: "/images/case-battle.png",
+      link: "/casestudy",
     },
     {
       title: "FLASH PITCH FIESTA",
@@ -121,6 +124,7 @@ export default function Events() {
         Flash Pitch Fiesta, where participants will get a platform to prove their metal, capability to thinking over the course \
         of 5 hours to prepare, pitch and present their ideas.",
       image: "/images/Blind-pitch.png",
+      link: "/blindpitch",
     },
   ];
 
