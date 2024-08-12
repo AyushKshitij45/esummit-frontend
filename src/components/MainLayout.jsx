@@ -7,6 +7,8 @@ import Image from "next/image";
 import Teams from "@/components/Teams/teams";
 import Events from "@/components/Events/Events";
 
+
+
 export default function Layout() {
   return (
     <div className="bg-[#1C371E]">
@@ -59,7 +61,7 @@ export default function Layout() {
           </div>
 
           <div className="sponsors-carousel mx-auto bg-white py-4 overflow-hidden relative w-[100%]">
-            <div className="flex items-center justify-center overflow-scroll">
+            <div className="flex items-center justify-center overflow-scroll ">
               <img
                 src="/images/ditto.png"
                 alt="Acer"
@@ -81,7 +83,20 @@ export default function Layout() {
                 height={48}
                 className="inline-block mx-12"
               />
-              
+              <img
+                src="/images/Protoio-logo.png"
+                alt="Uber"
+                width={48}
+                height={48}
+                className="inline-block mx-12"
+              />
+              <img
+                src="/images/wolfram-one1.png"
+                alt="Uber"
+                width={48}
+                height={48}
+                className="inline-block mx-12"
+              />
             </div>
           </div>
         </div>

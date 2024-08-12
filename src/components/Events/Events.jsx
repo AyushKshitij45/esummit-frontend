@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { Link } from 'react-router-dom';
 
 // Modal Component
 const Modal = ({ isOpen, onClose, event }) => {
@@ -17,6 +18,9 @@ const Modal = ({ isOpen, onClose, event }) => {
         <button className="bg-green-500 text-black px-4 py-2 rounded-full text-xl font-bold" onClick={onClose}>
           Close
         </button>
+        {/* <a href={event.link}><button className="bg-green-500 text-black px-4 py-2 rounded-full text-xl font-bold">
+          More Info
+        </button></a> */}
       </div>
     </div>
   );
@@ -24,7 +28,7 @@ const Modal = ({ isOpen, onClose, event }) => {
 };
 
 // EventCard Component
-const EventCard = ({ title, description, image, onClick }) => {
+const EventCard = ({ title, description, image, onClick, link }) => {
   return (
     <div
       className="relative nft rounded-lg shadow-lg flex items-stretch border-[1.5px] border-[#8F9D91]
@@ -40,6 +44,11 @@ const EventCard = ({ title, description, image, onClick }) => {
             {description.length > 100 ? `${description.substring(0, 100)}...` : description}
           </div>
           <div className="w-full flex justify-end">
+            {link && (
+              <a href={link} className="text-green-600 text-xl flex items-center space-x-2 py-2 px-4 hover:text-white" target="_blank" rel="noopener noreferrer">
+                <span>More Info</span>
+              </a>
+            )}
             <button className="text-green-500 text-2xl">&#x279C;</button>
           </div>
         </div>
@@ -56,13 +65,14 @@ export default function Events() {
     {
       title: "DISRUPT-X",
       description:
-        "The upcoming hackathon, \"DisruptX : Ruby Revolution,\" features three segments: Little Wiz (U12), \
+        "The upcoming hackathon, DisruptX features three segments: Little Wiz (U12), \
         Rookies (UG students), and Seasoned Players (experienced UG students). \
         Participants can choose between product and technical solutions in tracks like Machine Learning,\
          Generative AI, Web3, and Web Development. Prizes include licenses, cash rewards, and sponsorships, \
          with workshops and mentorship provided throughout.\
-        Conducted in 2 rounds, Live Development followed by pitching. Team members can be of 3-4 people.",
+        Conducted in 2 rounds, Live Development followed by pitching. Team members can be of 2-5 people. As well as verticals for Individual participants.",
       image: "/images/Poster-Hackathon.png",
+      link: "/hackathon",
     },
     {
       title: "BAZAAR BULLS",
@@ -72,6 +82,7 @@ export default function Events() {
           ticker symbol game, quizzes etc. \
         This is an individual event, not teams are required. There is only one round, but there are multiple small games.",
       image: "/images/Bazaar-Bulls.png",
+      // link: "/bazaar-bulls",
     },
     {
       title: "SPEAKER SESSIONS",
@@ -138,6 +149,7 @@ export default function Events() {
             description={event.description}
             image={event.image}
             onClick={() => handleEventClick(event)}
+            link={event.link}
           />
         ))}
       </div>
