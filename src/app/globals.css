@@ -1,0 +1,60 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'PlusJakartaSans';
+  src: url('../fonts/PlusJakartaSans-Regular.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GilroyMedium';
+  src: url('../fonts/Gilroy-Medium.ttf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GilroyExtraBold';
+  src: url('../fonts/Gilroy-ExtraBold.ttf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DrukWideBold';
+  src: url('../fonts/DrukWideBold.ttf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.sponsor-scroll {
+  display: flex;
+  white-space: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+.bg-darkslategray {
+  --tw-bg-opacity: 1;
+  background-color: rgb(28 55 30 / var(--tw-bg-opacity));
+}
+.text-greenyellow {
+  --tw-text-opacity: 1;
+  color: rgb(162 242 80 / var(--tw-text-opacity));
+}
+.text-darkslategray {
+  --tw-text-opacity: 1;
+  color: rgb(28 55 30 / var(--tw-text-opacity));
+}
+.font-druk-wide-bold {
+  font-family: 'Druk Wide Bold';
+  font-weight: 700
+}
