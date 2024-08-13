@@ -19,7 +19,14 @@ const Footer = () => {
         </div>
         <div className="">
           <h1 className="font-semibold">Marketing & Partnership:</h1>
-          <div>pcr.ecell@kiit.ac.in</div>
+          <div><a href="mailto:pcr.ecell@kiit.ac.in"             target="_blank"
+            rel="noopener noreferrer">pcr.ecell@kiit.ac.in</a></div>
+        </div>
+        <div className="">
+          <h1 className="font-semibold">Resources:</h1>
+          <div><a href="https://docs.google.com/forms/d/e/1FAIpQLSdrDnQBwt-BUoJ-bdWgjKNpjXiSmxwauTGN2-wdRIzcR8R8qw/viewform"             target="_blank"
+            rel="noopener noreferrer">Campus Ambassador</a></div>
+          {/* <div><a href="">Campus Ambassador</a></div> */}
         </div>
         <div className="">
           <Image

@@ -1,11 +1,14 @@
 "use client";
 import { useState } from 'react';
+import {motion} from "framer-motion";
+
 
 // ProblemModal Component
 const ProblemModal = ({ isOpen, onClose, problem }) => {
   if (!isOpen || !problem) return null;
 
   return (
+
     <div className="fixed inset-0 flex items-center justify-center z-50 overflow-y-auto">
       <div className="fixed inset-0 bg-black opacity-50" onClick={onClose}></div>
       <div className="bg-[#1C371E] rounded-lg shadow-lg flex flex-col items-center border-[1.5px] border-[#8F9D91] 
@@ -34,9 +37,11 @@ const ProblemModal = ({ isOpen, onClose, problem }) => {
 // ProblemCard Component
 const ProblemCard = ({ problem, onClick }) => {
   return (
-    <div
-      className="relative bg-[#1C371E] rounded-lg shadow-lg border-[1.5px] border-[#8F9D91] 
-      [backdrop-filter:blur(17.79px)] p-4 cursor-pointer"
+    <motion.div
+      whileHover={{ scale: 1.1 }}
+      whileTap={{ scale: 0.75 }}
+      className="relative bg-[#1C371E] rounded-lg m-4 shadow-lg border-[1.5px] border-[#8F9D91] 
+      [backdrop-filter:blur(17.79px)] p-4 cursor-pointer opacity-75"
       onClick={onClick}
     >
       <img src={problem.image} alt={problem.title} className="w-full h-40 object-cover rounded-t-lg mb-4" />
@@ -48,7 +53,7 @@ const ProblemCard = ({ problem, onClick }) => {
       <div className="w-full flex justify-end mt-2">
         <button className="text-green-500 text-xl">&#x279C;</button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -159,7 +164,7 @@ const Problems = () => {
   };
 
   return (
-    <div className="text-white py-16 bg-[#1C371E]">
+    <div className="text-white py-16 bg-transparent">
       <h1 className="text-4xl font-bold text-center mb-8">Hackathon Problem Statements</h1>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {problemStatements.map((problem, index) => (

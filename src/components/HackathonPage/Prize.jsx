@@ -1,6 +1,6 @@
 "use client";
 import { useState } from 'react';
-
+import {motion} from "framer-motion";
 // PrizeModal Component
 const PrizeModal = ({ isOpen, onClose, prize }) => {
   if (!isOpen || !prize) return null;
@@ -24,9 +24,11 @@ const PrizeModal = ({ isOpen, onClose, prize }) => {
 // PrizeCard Component
 const PrizeCard = ({ prize, onClick }) => {
   return (
-    <div
+    <motion.div
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.05 }}
       className="relative bg-[#1C371E] rounded-lg shadow-lg border-[1.5px] border-[#8F9D91] 
-      [backdrop-filter:blur(17.79px)] p-4 cursor-pointer"
+      [backdrop-filter:blur(17.79px)] m-4 p-4 cursor-pointer"
       onClick={onClick}
     >
       <h2 className="text-2xl font-bold text-white mb-2">{prize.title}</h2>
@@ -35,7 +37,7 @@ const PrizeCard = ({ prize, onClick }) => {
       <div className="w-full flex justify-end mt-2">
         <button className="text-green-500 text-xl">&#x279C;</button>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
@@ -83,7 +85,7 @@ const Prizes = () => {
   };
 
   return (
-    <div className="text-white py-16 bg-[#1C371E]">
+    <div className="text-white py-16 bg-transparent">
       <h1 className="text-4xl font-bold text-center mb-8">Prize Details</h1>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {prizeDetails.map((prize, index) => (

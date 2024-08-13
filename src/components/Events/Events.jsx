@@ -18,9 +18,9 @@ const Modal = ({ isOpen, onClose, event }) => {
         <button className="bg-green-500 text-black px-4 py-2 rounded-full text-xl font-bold" onClick={onClose}>
           Close
         </button>
-        {/* <a href={event.link}><button className="bg-green-500 text-black px-4 py-2 rounded-full text-xl font-bold">
+        <a href={event.link}><button className="bg-green-500 text-black m-4 px-4 py-2 rounded-full text-xl font-bold">
           More Info
-        </button></a> */}
+        </button></a>
       </div>
     </div>
   );

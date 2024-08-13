@@ -33,8 +33,8 @@ const FAQ = () => {
   };
 
   return (
-    <section id="faq" className="py-16 bg-[#1C371E]">
-      <h2 className="text-3xl font-semibold mb-6 text-green-300 text-center">FAQ</h2>
+    <section id="faq" className="py-16 bg-transparent" >
+      <h2 className="text-3xl font-semibold mb-6 text-green-300 text-center shadow-lg" >FAQ</h2>
       <div className="max-w-7xl mx-auto space-y-4">
         {faqs.map((faq, index) => (
           <div 
@@ -42,7 +42,7 @@ const FAQ = () => {
             className="bg-gray-800 rounded-lg shadow-lg border border-gray-700 cursor-pointer"
             onClick={() => toggleOpen(index)}
           >
-            <div className="p-6">
+            <div className="p-6" >
               <h3 className="text-xl font-bold mb-3 text-white">{faq.question}</h3>
               <p className={`text-gray-400 transition-all duration-300 ${openIndex === index ? 'max-h-[500px] opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                 {faq.answer}

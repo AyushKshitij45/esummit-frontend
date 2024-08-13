@@ -14,6 +14,7 @@
     "autoprefixer": "10.4.19",
     "eslint": "8.57.0",
     "eslint-config-next": "14.2.3",
+    "framer-motion": "^11.3.24",
     "mongoose": "^8.3.4",
     "next": "^14.2.3",
     "postcss": "8.4.38",

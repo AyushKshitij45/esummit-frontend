@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
       <body className="text-white">
         <Navbar />
         <main>{children}</main>
-        <Footer />
+        <Footer className="!z-5"/>
       </body>
     </html>
   );

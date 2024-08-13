@@ -58,3 +58,7 @@
   font-family: 'Druk Wide Bold';
   font-weight: 700
 }
+
+.elevated-footer{
+  zIndex: 5;
+}

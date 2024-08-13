@@ -82,7 +82,7 @@ const Mentors = () => {
   };
 
   return (
-    <div className="text-white py-16 bg-[#1C371E]">
+    <div className="text-white py-16 bg-transparent">
       <h1 className="text-4xl font-bold text-center mb-8">Mentor Details</h1>
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {mentorDetails.map((mentor, index) => (

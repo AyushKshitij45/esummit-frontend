@@ -30,12 +30,12 @@ const Navbar = () => {
             Contact
           </Link>
           <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSdrDnQBwt-BUoJ-bdWgjKNpjXiSmxwauTGN2-wdRIzcR8R8qw/viewform"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSe30F-Ua4EtQTPG2QmXiF-yAjcUwrOR__eR5JHkYTRpP_RRSQ/alreadyresponded"
             target="_blank"
             rel="noopener noreferrer"
-          >
+          > 
             <button className="ml-4 px-4 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black">
-              Campus Ambassador
+              Register Now
             </button>
           </a>
         </div>
@@ -85,12 +85,12 @@ const Navbar = () => {
               </li>
               <li className="block w-full px-4 py-2 hover:bg-gray-700 rounded">
                 <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdrDnQBwt-BUoJ-bdWgjKNpjXiSmxwauTGN2-wdRIzcR8R8qw/viewform"
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSe30F-Ua4EtQTPG2QmXiF-yAjcUwrOR__eR5JHkYTRpP_RRSQ/alreadyresponde"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   <button className="w-full px-4 py-2 border border-white text-white rounded-full hover:bg-white hover:text-black">
-                    Campus Ambassador
+                    Register Now
                   </button>
                 </a>
               </li>

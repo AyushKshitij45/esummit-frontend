@@ -11,7 +11,7 @@ import FAQ from './FAQ';
 const BazaarBullsPage = () => {
   return (
     <div className="p-6 bg-[#1C371E]">
-      <h1 className="text-4xl font-bold mb-8 text-center text-white mt-[80px]">DisruptX - Hackathon</h1>
+      <h1 className="text-4xl font-bold mb-8 text-center text-white mt-[80px]">BlindPitch</h1>
       <hr></hr>
       <Problems/>
       
