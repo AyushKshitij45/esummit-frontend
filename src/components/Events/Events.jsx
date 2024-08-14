@@ -45,7 +45,7 @@ const EventCard = ({ title, description, image, onClick, link }) => {
           </div>
           <div className="w-full flex justify-end">
             {link && (
-              <a href={link} className="text-green-600 text-xl flex items-center space-x-2 py-2 px-4 hover:text-white" target="_blank" rel="noopener noreferrer">
+              <a href={link} className="text-green-600 text-xl flex items-center space-x-2 py-2 px-4 hover:text-white" >
                 <span>More Info</span>
               </a>
             )}

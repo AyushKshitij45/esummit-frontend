@@ -9,6 +9,8 @@ import Mentors from './Mentor';
 import Workshops from './Workshop';
 import FAQ from './FAQ';
 import { motion } from 'framer-motion'; 
+import CustomizedTimeline from './Timeline';
+import RubyTrophy from './TrophyMode';
 
 
 const HackathonPage = () => {
@@ -52,9 +54,13 @@ const HackathonPage = () => {
 
           <Problems />
 
+          <div className='timeline-hackathon'>
+            <CustomizedTimeline/>
+          </div>
           <Prizes />
 
           <Mentors />
+          <RubyTrophy src="/files/ruby-trophy.glb" alt="Ruby Trophy" />
 
           <Workshops />
 

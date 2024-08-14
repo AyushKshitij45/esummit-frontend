@@ -61,7 +61,7 @@ const Navbar = () => {
           </button>
         </div>
         {isMenuOpen && (
-          <div className="absolute top-full left-0 w-full mt-2 cursor-pointer shadow-lg bg-[#DADADA] bg-opacity-10 backdrop-filter backdrop-blur-lg border-[1px] border-[#8F9D91] rounded-lg py-2 px-4 z-50">
+          <div className="absolute top-full left-0 w-full mt-2 cursor-pointer shadow-lg bg-[#1C371E] bg-opacity-75 backdrop-filter backdrop-blur-lg border-[1px] border-[#8F9D91] rounded-lg py-2 px-4 z-50">
             <ul className="flex flex-col space-y-2 text-white">
               <li className={`block w-full px-4 py-2 hover:bg-gray-700 rounded ${isActive("/") ? "bg-white text-black" : ""}`}>
                 <Link href="/">

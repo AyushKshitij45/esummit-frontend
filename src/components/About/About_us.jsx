@@ -18,7 +18,7 @@ const About_us = () => {
           </div>
         </div>
         <section className="w-full max-w-7xl bg-darkslategray relative flex flex-col lg:flex-row items-start justify-start text-left text-lg text-white font-poppins mt-16 px-4 lg:px-8">
-          <div className="w-full lg:10 relative backdrop-blur-md rounded-lg bg-gradient-to-r from-white/60 to-transparent p-4 lg:p-40 border border-gray">
+          <div className="w-full lg:10 relative backdrop-blur-md rounded-lg bg-gradient-to-r from-white/30 to-transparent p-4 lg:p-40 border border-gray">
             <div style={{ fontSize: 'x-large' }} className="text-base lg:text-lg leading-relaxed mb-10">
               KIIT E-Cell&apos;s E-Summit annual flagship event, E-Summit is a conference
               involving a number of speakers, incubators, investors, early
@@ -53,13 +53,13 @@ const About_us = () => {
         <section className="w-full max-w-7xl flex flex-col lg:flex-row items-stretch justify-between mt-16 px-4 lg:px-8 text-white font-poppins">
           <div className="w-full lg:w-1/2 lg:p-4 flex flex-col">
             <h2 className="font-bold mb-4 font-Druk-Wide-Bold mbMedium:text-[2vw] text-[8vw]">ABOUT KIIT</h2>
-            <div className="flex-grow text-base lg:text-lg leading-relaxed backdrop-blur-md rounded-lg bg-gradient-to-r from-white/60 to-transparent p-4 lg:p-12 border border-gray">
+            <div className="flex-grow text-base lg:text-lg leading-relaxed backdrop-blur-md rounded-lg bg-gradient-to-r from-white/30 to-transparent p-4 lg:p-12 border border-gray">
               KIIT (Kalinga Institute of Industrial Technology) is one of the most prestigious educational institutions in India. Known for its commitment to academic excellence, KIIT offers a diverse range of programs in engineering, management, law, and more. The university is dedicated to fostering an environment of innovation and research, providing students with the tools and opportunities to excel in their respective fields.
             </div>
           </div>
           <div className="w-full lg:w-1/2 lg:p-4 flex flex-col">
             <h2 className="font-bold mb-4 font-Druk-Wide-Bold mbMedium:text-[2vw] text-[8vw]">ABOUT KIIT KAREER SCHOOL</h2>
-            <div className="flex-grow text-base lg:text-lg leading-relaxed backdrop-blur-md rounded-lg bg-gradient-to-r from-white/60 to-transparent p-4 lg:p-12 border border-gray">
+            <div className="flex-grow text-base lg:text-lg leading-relaxed backdrop-blur-md rounded-lg bg-gradient-to-r from-white/30 to-transparent p-4 lg:p-12 border border-gray">
               KIIT Kareer School is dedicated to shaping the careers of KIIT students across various disciplines including Engineering, Management, and Law. We offer comprehensive training for placements, focusing on aptitude and soft skills, and also prepare students for higher studies such as MBA and GRE. Additionally, we provide training for banking exams, CSAT, and PSU tests. Our team consists of highly experienced trainers with over a decade of expertise. Our mission is to equip students with the skills and confidence needed to tackle life&apos;s challenges and succeed.
             </div>
           </div>

@@ -59,6 +59,31 @@
   font-weight: 700
 }
 
-.elevated-footer{
+/* .elevated-footer{
   zIndex: 5;
+} */
+
+/* Hide the default scrollbar and replace it with a thin green line */
+body {
+  overflow-y: scroll !important; /* Ensure the scrollbar is always visible */
+}
+
+/* WebKit browsers (Chrome, Safari) */
+body::-webkit-scrollbar {
+  width: 4px !important;/* Width of the scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent !important; /* Background of the scrollbar track */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: green !important; /* Color of the scrollbar thumb */
+  border-radius: 10px !important; /* Rounded corners for the scrollbar thumb */
+}
+
+/* Firefox */
+body {
+  scrollbar-width: thin; /* Make the scrollbar thin */
+  scrollbar-color: green transparent; /* Color of the scrollbar thumb and track */
 }

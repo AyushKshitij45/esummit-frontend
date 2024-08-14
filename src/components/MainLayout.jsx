@@ -3,6 +3,7 @@
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Image from "next/image";
+import "../index.css";
 
 import Teams from "@/components/Teams/teams";
 import Events from "@/components/Events/Events";
@@ -61,7 +62,8 @@ export default function Layout() {
           </div>
 
           <div className="sponsors-carousel mx-auto bg-white py-4 overflow-hidden relative w-[100%]">
-            <div className="flex items-center justify-center overflow-scroll ">
+            <div className="flex items-center justify-center overflow-hidden">
+              <marquee scrollamount="10" behavior="scroll" direction="left" loop="infinite" >
               <img
                 src="/images/ditto.png"
                 alt="Acer"
@@ -97,6 +99,22 @@ export default function Layout() {
                 height={48}
                 className="inline-block mx-12"
               />
+              <img
+                src="/images/meraki-logo.jpeg"
+                alt="Uber"
+                width={48}
+                height={48}
+                className="inline-block mx-12"
+              />
+              <img
+                src="/images/finshots.png"
+                alt="Uber"
+                width={48}
+                height={48}
+                className="inline-block mx-12"
+              />
+  
+              </marquee>
             </div>
           </div>
         </div>
